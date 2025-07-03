@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jordan Flores IA</title>
-    <style>
-         body{
+        <style>
+        body{
             display: flex;
             align-items: center;
             justify-content: center;
@@ -22,39 +22,21 @@
             text-align: center;
             background-color: #2d86ca5f;
         }
-        ul{
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 8px;
-        }
-        a{
-            color: white;
-        }
         h1{
             color: #23b5e8;
         }
     </style>
 </head>
 <body>
-    <!--<h1>Jordan Flores</h1>-->
-    <!--<header>
-        <nav>
-            <a href="">
-                <img src="visual-studio-code-1.jpg" alt="logo" width="42" height="32">
-            </a>
-            <ul>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#contact">Contacto</a></li>
-            </ul>
-            <a href="">Contact me</a>
+    <header class="header">
+        <nav class="nav">
+            <div class="container d-flex a-items-center g-4">
+                <a href=""></a>
+                <h1>03 Formularios y CSS</h1>
+            </div>
         </nav>
-    </header>-->
-    <main>
+    </header>
+    <maim class="main">
         <article>
             <div>
                 <h2>Frontend Developer</h2>
@@ -66,8 +48,8 @@
         </article>
         <section id="experience">
             <div>
-                <h2>Experience</h2>
-                <ul>
+                <h2>Proyectos</h2>
+                <ul class="list list--striped-anchors">
                     <li>
                         <div>
                             <div>
@@ -98,26 +80,25 @@
                     </li>
                 </ul>
             </div>
-            <nav>
-            <a href="">
-                <img src="visual-studio-code-1.jpg" alt="logo" width="42" height="32">
-            </a>
-            <ul>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#contact">Contacto</a></li>
-            </ul>
-            <a href="">Contact me</a>
-            </nav>
         </section>
         <section id="contact">
             <div>
                 <h2>Contact</h2>
                 <form action="">
-                    <input type="text" placeholder="Name" name="name">
+                    <div>
+                        <input type="text" placeholder="Name" name="name" required>
+                        <input type="text" placeholder="Last name" name="last-name" required>
+                    </div>
+                    <div>
+                        <input type="text" name="Phone" id="phone" required>
+                        <input type="email" name="Email" id="email" required>
+                    </div>
+                    <textarea name="Messege" id="message"></textarea>
+                    <br>
+                    <button>Send</button>
                 </form>
             </div>
         </section>
-    </main>
+    </maim>
 </body>
 </html>

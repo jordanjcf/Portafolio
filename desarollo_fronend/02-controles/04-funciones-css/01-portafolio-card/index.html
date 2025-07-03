@@ -4,42 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jordan Flores IA</title>
-    <style>
-         body{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            min-height: 100dvh;
-            margin: 0;
-            background-color: #010508;
-            color: #fefefe;
-            font-family: monospace;
-        }
-        main{
-            max-width: 320px;
-            padding: 16px;
-            border-radius: 16px;
-            text-align: center;
-            background-color: #2d86ca5f;
-        }
-        ul{
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 8px;
-        }
-        a{
-            color: white;
-        }
-        h1{
-            color: #23b5e8;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="body">
     <!--<h1>Jordan Flores</h1>-->
     <!--<header>
         <nav>
@@ -54,20 +21,20 @@
             <a href="">Contact me</a>
         </nav>
     </header>-->
-    <main>
+    <main class="main">
         <article>
             <div>
-                <h2>Frontend Developer</h2>
-                <h1>Jordan Flores</h1>
-                <p>Nuevo programador de Frontend</p>
+                <h1 class="title">Frontend Developer</h1>
+                <h2 class="subtitle">Jordan Flores</h2>
+                <p class="text">Nuevo programador de Frontend</p>
                 <a href="#">Contact me</a>
             </div>
             <img src="imagen.jpg" alt="Jordan coaugila" width="200" height="250">
         </article>
         <section id="experience">
             <div>
-                <h2>Experience</h2>
-                <ul>
+                <h2 class="title">Experience</h2>
+                <ul class="list">
                     <li>
                         <div>
                             <div>
@@ -102,10 +69,10 @@
             <a href="">
                 <img src="visual-studio-code-1.jpg" alt="logo" width="42" height="32">
             </a>
-            <ul>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#contact">Contacto</a></li>
+            <ul class="list">
+                <li class="badge"><a href="#experience">Experience</a></li>
+                <li class="badge"><a href="#">Projects</a></li>
+                <li class="badge"><a href="#contact">Contacto</a></li>
             </ul>
             <a href="">Contact me</a>
             </nav>
