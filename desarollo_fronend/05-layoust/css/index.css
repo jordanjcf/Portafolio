@@ -1,0 +1,165 @@
+:root{
+    --color-scheme: light dark;
+    --primary-color: #23b5e8;
+    --White-color: #fefefe;
+    --neutral-200: #bbb;
+    --shadow: #fefefe80;
+    --light-shadow: #01050880;
+    --size: 0.25rem;
+    --max-width: 1280px;
+    --transition-duration: 0.25s;
+    --font-family: "Roboto", sans-serif;
+    --secondary-text: var(--neutral-200);
+    --border-radius: calcular(var(--size)-2);
+    color-scheme: var(--color-scheme);
+}
+
+.body{
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 0  0.125rem 0.0625rem #fefefe80;
+    background-color: #01050880;
+    backdrop-filter: blur(0.125rem);
+    z-index: 5;
+}
+
+.nav{
+    padding-block: 1rem;
+}
+
+.hero{
+    position: relative;
+    padding-block: 4rem;
+}
+
+.container{
+    max-width: var(--max-width);
+    padding-inline: 1rem;
+    margin-inline: auto;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.d-grip{
+    display: grid;
+}
+
+.flex-1{
+    flex: 1;
+}
+
+.list{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.img{
+    display: block;
+    object-fit: cover;
+}
+
+.img--background{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    inset: 0;
+    opacity: 0.75;
+}
+
+.a-items-center{
+    align-items: center;
+}
+
+.j-content-center{
+    justify-content: center;
+}
+
+.j-content-end{
+    justify-content: flex-end;
+}
+
+.j-items-center{
+    justify-content: center;
+}
+
+.g-2{
+    gap: 0.5rem;
+}
+
+.link{
+    position: relative;
+    color: #fefefe;
+    text-decoration: none;
+    transition: color 0.25s;
+
+    &::before{
+        content: "";
+        position:absolute;
+        bottom: -0.125rem;
+        width: 100%;
+        height: 0.0625em;
+        background-color: #23b5e8;
+        transform: scale(0);
+        transition: transform 0.25s;
+    }
+
+    &:hover{
+        color: #23b5e8;
+
+        &::before{
+            transform: scale(1);
+        }
+    }
+}
+
+.title{
+    margin: 0;
+    /*toDo: Update font*/
+    font-size: calc(var(--size)-8);
+    font-weight: 800;
+}
+
+.title--g{
+    margin: 0;
+    /*toDo: Update font*/
+    font-size: calc(var(--size)-9);
+}
+
+.subtitle{
+    margin: 0;
+    /*toDo: Update font*/
+    font-size: calc(var(--size)-6);
+    font-weight: 700;
+}
+
+.text{
+    font-size: calc();
+}
+
+.button{
+    background-color: #23b5e8;
+    padding: 0.5rem 1em;
+    border-radius: 0.5rem;
+    color: black;
+    text-decoration: none;
+}
+
+.g-layout{
+    display: grid;
+}
+
+@media (width >=768px) {
+  .md\:g-template-columns-1fr-1fr {
+    grid-template-columns: 1fr 1fr;
+  }
+}
